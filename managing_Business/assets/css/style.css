@@ -1,8 +1,145 @@
+/* ---------- basics */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-/*img {
+img {
   max-width: 100%;
-} */
+}
+html {
+  font-size: 62.5%;
+  font-family: manrope, Arial, Helvetica, sans-serif;
+}
+@font-face {
+  font-family: manrope;
+  src: url(../fonts/Manrope-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: acme;
+  src: url(../fonts/Acme-Regular.ttf);
+}
+@font-face {
+  font-family: anek;
+  src: url(../fonts/AnekBangla-VariableFont_wdth\wght.ttf);
+}
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: chenla;
+  src: url(../fonts/Chenla\ Regular.ttf);
+}
+
+h1 {
+  font-family: manrope, Arial, Helvetica, sans-serif;
+  font-size: 6rem;
+  font-weight: 800;
+}
+h2 {
+  font-family: acme, Arial, Helvetica, sans-serif;
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #282828;
+}
+h4 {
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+p {
+  font-size: 2rem;
+  color: #757095;
+}
+.button {
+  padding: 1rem 4rem;
+  border-radius: 50px;
+  background-color: #05796b;
+  font-size: 1.8rem;
+  color: white;
+}
+
+/* ------------------ header + nav*/
+
+header {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+  background: url(../img/hero_img.png) no-repeat;
+  background-position: right top 20vh;
+}
+
+/* ---------- nav */
+nav {
+  padding-bottom: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav span {
+  font-family: anek, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+nav div a {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.nav-mid {
+  display: flex;
+  gap: 5rem;
+}
+
+/* ------- arrow-style */
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+/* ----------- header */
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 4rem;
+  width: 50%;
+}
+.header-container a {
+  max-width: 17rem;
+}
+
+.header-subcont {
+  padding-top: 5vh;
+  padding-bottom: 15vh;
+  display: flex;
+}
+
+.header-subcont div p {
+  font-family: anek, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: #8593a3;
+}
+header span {
+  font-family: acme, Arial, Helvetica, sans-serif;
+  font-size: 2.2rem;
+  text-align: center;
+  display: block;
+}
