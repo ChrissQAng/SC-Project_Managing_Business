@@ -74,6 +74,7 @@ header {
   padding-bottom: 20vh;
   background: url(../img/hero_img.png) no-repeat;
   background-position: right top 20vh;
+  background-size: 50vw;
 }
 
 /* ---------- nav */
@@ -97,6 +98,17 @@ nav div a {
 .nav-mid {
   display: flex;
   gap: 5rem;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-right a:nth-of-type(2) {
+  background-color: #f57059;
 }
 
 /* ------- arrow-style */
@@ -129,6 +141,9 @@ nav div a {
   padding-top: 5vh;
   padding-bottom: 30vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .header-subcont div p {
@@ -149,3 +164,5 @@ header span {
   justify-content: space-between;
   align-items: center;
 }
+
+/* ----------------- main */
