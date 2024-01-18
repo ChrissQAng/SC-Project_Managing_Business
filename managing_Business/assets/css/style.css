@@ -34,7 +34,6 @@ html {
 }
 
 h1 {
-  font-family: manrope, Arial, Helvetica, sans-serif;
   font-size: 6rem;
   font-weight: 800;
 }
@@ -48,6 +47,16 @@ h3 {
   color: #282828;
 }
 h4 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+h5 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+h6 {
+  font-size: 2.4rem;
+  font-weight: 600;
 }
 a {
   text-decoration: none;
@@ -71,7 +80,7 @@ header {
   padding-left: 10vw;
   padding-right: 10vw;
   padding-top: 10vh;
-  padding-bottom: 20vh;
+  padding-bottom: 25vh;
   background: url(../img/hero_img.png) no-repeat;
   background-position: right top 20vh;
   background-size: 50vw;
@@ -166,3 +175,109 @@ header span {
 }
 
 /* ----------------- main */
+
+/* ----------- services */
+
+.services {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 25vh;
+  background: url(../img/save_time_bg.png) no-repeat;
+  background-position: right top;
+  background-size: 60vw;
+}
+
+.services span {
+  font-family: anek, Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  padding-bottom: 2vh;
+}
+.services h4 {
+  display: block;
+  text-align: center;
+}
+
+/* ------- services grid */
+
+.services-grid {
+  padding-top: 8vh;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr)); */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.7rem;
+}
+.services-grid article {
+  border: 1px solid #e7e7e7;
+  background-color: white;
+  border-radius: 15px;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+}
+.services-grid article p {
+  font-size: 1.2rem;
+  color: #757095;
+}
+.services-grid article img {
+  background-color: #ececec;
+  width: 23%;
+  border-radius: 5px;
+}
+/* ------- last grid */
+
+.services-grid .grid-green {
+  background-color: #05796b;
+  color: white;
+  gap: 4rem;
+}
+.services-grid .grid-green h5 {
+  font-size: 3.3rem;
+}
+.services-grid .grid-green p {
+  color: white;
+}
+
+/* ----------- process */
+
+.process-headl {
+  padding-bottom: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------ process-icons */
+
+.process-icons {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.process-icons article:nth-child(odd) {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.process-icons article:nth-child(even) {
+  width: 20%;
+  /* background-color: yellow; */
+}
+.process-icons article p {
+  font-size: 1.6rem;
+  width: 150%;
+  text-align: center;
+}
