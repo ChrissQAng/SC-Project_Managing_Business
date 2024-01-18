@@ -32,6 +32,10 @@ html {
   font-family: chenla;
   src: url(../fonts/Chenla\ Regular.ttf);
 }
+@font-face {
+  font-family: mono;
+  src: url(../fonts/B612Mono-Regular.ttf);
+}
 
 h1 {
   font-size: 6rem;
@@ -252,6 +256,7 @@ header span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 /* ------ process-icons */
@@ -276,8 +281,26 @@ header span {
   width: 20%;
   /* background-color: yellow; */
 }
+.process-icons article span {
+  align-self: flex-start;
+  font-family: mono, Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.8rem;
+}
 .process-icons article p {
   font-size: 1.6rem;
   width: 150%;
   text-align: center;
+}
+
+/* --------------- download */
+
+.download span {
+  font-family: anek, Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  color: #f57059;
+  text-transform: uppercase;
 }
