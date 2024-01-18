@@ -298,9 +298,124 @@ header span {
 
 /* --------------- download */
 
+.download {
+  padding-left: 22vw;
+  padding-right: 22vw;
+  padding-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+}
+
 .download span {
   font-family: anek, Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   color: #f57059;
   text-transform: uppercase;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.button-wrapper a:first-of-type {
+  background-color: #f57059;
+}
+
+/* ------------- repair */
+
+.repair {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.repair-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.repair-right a {
+  align-self: flex-start;
+}
+
+/* ------------ offer */
+
+.offer {
+  padding-left: 15vw;
+  /* padding-right: 10vw; */
+  padding-bottom: 25vh;
+  padding-top: 8vh;
+
+  /* background-size: 60vw; */
+}
+.offer-wrapper span {
+  font-size: 4.6rem;
+  font-weight: 800;
+}
+.offer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  text-align: center;
+}
+.offer-tiles {
+  padding-top: 12vh;
+  background: url(../img/save_time_bg.png) no-repeat;
+  background-position: center top;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.offer-tiles article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+  border: 1px solid rgba(167, 167, 167, 0.24);
+  border-radius: 16px;
+  padding: 3.2rem;
+  width: 70%;
+}
+.offer-tiles article p {
+  font-size: 1.6rem;
+  color: #8593a3;
+}
+.offer-tiles article .price {
+  font-size: 6.4rem;
+  color: #282828;
+}
+.price span {
+  font-size: 1.6rem;
+  color: #8593a3;
+  font-weight: 700;
+}
+li {
+  font-size: 1.6rem;
+  color: #8593a3;
+}
+
+/* ------------- testimonials */
+
+.testimonials span {
+  display: block;
+  text-align: center;
+  font-family: anek, Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #3734a9;
+}
+.testimonials h4 {
+  text-align: center;
 }
