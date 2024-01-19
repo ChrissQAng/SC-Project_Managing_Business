@@ -160,7 +160,7 @@ nav div a {
   gap: 1rem;
 }
 .header-subcont div {
-  min-width: 70%;
+  max-width: 70%;
 }
 
 .header-subcont div p {
