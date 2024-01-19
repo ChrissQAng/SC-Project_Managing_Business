@@ -14,7 +14,7 @@ html {
 }
 @font-face {
   font-family: manrope;
-  src: url(../fonts/Manrope-VariableFont_wght.ttf);
+  src: url(../fonts/Manrope[wght].ttf);
 }
 @font-face {
   font-family: acme;
@@ -76,6 +76,7 @@ p {
   background-color: #05796b;
   font-size: 1.8rem;
   color: white;
+  box-shadow: 0px 38px 50px 0px rgba(5, 121, 107, 0.2);
 }
 
 /* ------------------ header + nav*/
@@ -248,7 +249,7 @@ header span {
   color: white;
 }
 
-/* ----------- process */
+/* --------------- process */
 
 .process-headl {
   padding-bottom: 15vh;
@@ -269,6 +270,24 @@ header span {
   justify-content: center;
   align-items: center;
 }
+
+.icon-register-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px transparent black;
+  border-radius: 50%;
+  padding: 3rem;
+  box-shadow: 6px 8px 80px 0px rgba(148, 148, 148, 0.16);
+}
+.icon-compl-util-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #939393;
+  border-radius: 50%;
+  padding: 3rem;
+}
 .process-icons article:nth-child(odd) {
   width: 30%;
   display: flex;
@@ -284,11 +303,15 @@ header span {
 .process-icons article span {
   align-self: flex-start;
   font-family: mono, Arial, Helvetica, sans-serif;
-  border: 1px solid black;
+  border: 1px transparent black;
   border-radius: 50%;
-  display: inline-block;
-  padding: 1rem;
+  background-color: #f6f6f7;
+  padding: 1rem 1.7rem;
   font-size: 1.8rem;
+}
+.process-icons article .number-one {
+  background-color: white;
+  box-shadow: 8px 8px 80px 0px rgba(167, 167, 167, 0.8);
 }
 .process-icons article p {
   font-size: 1.6rem;
@@ -385,6 +408,7 @@ header span {
   gap: 5rem;
   border: 1px solid rgba(167, 167, 167, 0.24);
   border-radius: 16px;
+  box-shadow: 0px 8px 80px 0px rgba(5, 121, 107, 0.32);
   padding: 3.2rem;
   width: 70%;
   background-color: white;
@@ -569,4 +593,21 @@ footer {
 .socials {
   display: flex;
   gap: 1rem;
+}
+/* .footer-flex span .contact-us {
+  width: 120%;
+  font-size: 1.4rem;
+} */
+.copyright {
+  padding-top: 7vh;
+  padding-bottom: 5vh;
+  font-family: chenla, Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  color: #181433;
+  text-align: center;
+}
+
+/* ----------------- TABLET */
+
+@media only screen and (max-width: 768px) {
 }
