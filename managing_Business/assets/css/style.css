@@ -606,8 +606,18 @@ footer {
   color: #181433;
   text-align: center;
 }
+/* -------------------------------------------------------- */
 
 /* ----------------- TABLET */
 
 @media only screen and (max-width: 768px) {
+  header {
+    padding-left: 5vw;
+    /* padding-right: 10vw; */
+    padding-top: 10vh;
+    padding-bottom: 25vh;
+    background: url(../img/hero_img.png) no-repeat;
+    background-position: right top 20vh;
+    background-size: 30vw;
+  }
 }
