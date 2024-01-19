@@ -536,3 +536,37 @@ header span {
 }
 
 /* -------------- footer */
+
+footer {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+.footer-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+}
+.footer-flex article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 11rem;
+}
+.fo-fl-headl {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #181433;
+}
+.fo-first-article-text {
+  font-size: 1.6rem;
+  color: #757095;
+}
+.footer-flex span {
+  font-size: 1.6rem;
+  counter-reset: #181433;
+}
+.socials {
+  display: flex;
+  gap: 1rem;
+}
