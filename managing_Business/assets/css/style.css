@@ -657,11 +657,100 @@ footer {
     color: #8593a3;
   }
 
-  /* ----- testimonials */
+  /* ----------- testimonials */
   .testim-right {
     gap: 2rem;
   }
+  /* ----------- footer */
   footer {
     transform: scale(0.7);
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  /* --------------------------- header */
+  header {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background: none;
+  }
+
+  .header-container {
+    text-align: center;
+    gap: 2rem;
+    width: 100%;
+  }
+  .header-container a {
+    max-width: 17rem;
+    margin-left: 30%;
+  }
+
+  .header-subcont {
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+  }
+
+  .header-subcont div p {
+    font-size: 1.4rem;
+  }
+  .brands-headl {
+    font-size: 1.5rem;
+  }
+  .brands {
+    transform: scale(0.9);
+  }
+  /* ----------- services */
+
+  .services {
+    background-size: 80vw;
+  }
+  .services span {
+    font-size: 1rem;
+  }
+
+  /* ------- services grid */
+
+  .services-grid {
+    padding-top: 8vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    /* grid-template-columns: repeat(4, 1fr); */
+    gap: 2.7rem;
+  }
+  .services-grid article {
+    padding: 3rem;
+    gap: 3rem;
+  }
+  .services-grid article img {
+    width: 18%;
+  }
+  /* --------------- process */
+
+  /* ------ process-icons */
+
+  .process-icons {
+    padding-bottom: 8vh;
+    align-items: flex-start;
+    gap: 12%;
+  }
+
+  .process-icons article:nth-child(odd) {
+    width: 30%;
+    gap: 2rem;
+  }
+  .process-icons article:nth-child(even) {
+    display: none;
+  }
+
+  .process-icons article h6 {
+    align-self: flex-start;
+  }
+
+  .process-icons article p {
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: start;
   }
 }
