@@ -299,7 +299,6 @@ nav div select {
 }
 .process-icons article:nth-child(even) {
   max-width: 120%;
-  /* background-color: yellow; */
   padding-bottom: 9%;
 }
 .process-icons article span {
@@ -643,6 +642,21 @@ footer {
   .brands-headl {
     font-size: 1.5rem;
   }
+
+  /* ---------- process */
+
+  .process-icons article:nth-child(even) {
+    max-width: 100%;
+    padding-bottom: 30%;
+    transform: scale(0.6);
+  }
+
+  .process-icons article p {
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+  }
+
   /* -------- repair */
   .repair-right a {
     align-self: center;
@@ -666,6 +680,9 @@ footer {
     transform: scale(0.7);
   }
 }
+
+/* ------------------------------------------ */
+/* ----------- handy */
 
 @media only screen and (max-width: 567px) {
   /* --------------------------- header */
