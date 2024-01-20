@@ -117,7 +117,7 @@ nav div select {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15%;
+  gap: 5%;
 }
 
 .nav-right {
@@ -129,6 +129,8 @@ nav div select {
 
 .nav-right a:nth-of-type(2) {
   background-color: #f57059;
+
+  white-space: nowrap;
 }
 
 /* --------------------------- header */
@@ -172,7 +174,8 @@ nav div select {
 .brands {
   padding-top: 5vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.3rem;
 }
@@ -568,16 +571,16 @@ footer {
 }
 .footer-flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 5rem;
 }
 .footer-flex article {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  min-width: 11rem;
+  max-width: 20rem;
 }
+
 .fo-fl-headl {
   font-size: 2.1rem;
   font-weight: 700;
@@ -595,7 +598,14 @@ footer {
   display: flex;
   gap: 1rem;
 }
-
+.footer-flex article:last-of-type {
+  min-width: 22rem;
+}
+.contact-us {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
 .copyright {
   padding-top: 7vh;
   padding-bottom: 5vh;
@@ -627,7 +637,7 @@ footer {
   }
   .danial {
     font-size: 1.4rem;
-    width: 30%;
+    /* width: 30%; */
   }
   nav div a,
   nav div select {
@@ -635,6 +645,9 @@ footer {
     font-size: 1rem;
     font-weight: 600;
     border: none;
+  }
+  .header-container a {
+    max-width: 12rem;
   }
   .brands {
     padding-top: 2vh;
@@ -676,8 +689,18 @@ footer {
     gap: 2rem;
   }
   /* ----------- footer */
-  footer {
-    transform: scale(0.7);
+
+  .fo-first-article-text {
+    font-size: 1.4rem;
+  }
+  .fo-fl-headl {
+    font-size: 1.6rem;
+  }
+  .footer-flex span {
+    font-size: 1.4rem;
+  }
+  .footer-flex {
+    gap: 2rem;
   }
 }
 
@@ -769,5 +792,14 @@ footer {
     font-size: 1.3rem;
     width: 100%;
     text-align: start;
+  }
+  /* ----- footer */
+  .footer-flex {
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .footer-flex article {
+    max-width: 100%;
+    gap: 1rem;
   }
 }
